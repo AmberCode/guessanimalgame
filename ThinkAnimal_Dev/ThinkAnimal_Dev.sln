@@ -1,0 +1,99 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{50AB3CAF-F5A9-4CF7-87B1-8DB90B8E6AE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{4F102150-B1C3-4E74-A036-8D7FEB1AF2F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Browser", "Browser", "{3F53FA8B-8C44-468E-B103-978B75A3271A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{4C15A296-98FE-4E2D-81CA-FB6D39BA77D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkAnimal.WebApp", "ThinkAnimalWebApp\ThinkAnimal.WebApp.csproj", "{CF5DC23F-8A03-4AD7-87C8-766F0DAF23A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkAnimal.ThinkAnimalApi", "ThinkAnimalApi\ThinkAnimal.ThinkAnimalApi.csproj", "{AD3D9F26-BF1B-4951-B475-1518BB1DE9AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkAnimal.Interface", "ThinkAnimal.Interface\ThinkAnimal.Interface.csproj", "{7C05C9A0-2C16-4514-B12F-C3E443B14463}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkAnimal.Models", "ThinkAnimal.Models\ThinkAnimal.Models.csproj", "{CF0616A3-0983-4071-9303-233E30E8A27C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkAnimal.NodeDAL", "ThinkAnimal.NodeDAL\ThinkAnimal.NodeDAL.csproj", "{C9196498-0943-4AA2-BECD-350AF217CF5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{B14E3D83-FE5F-4BB2-A13F-8B037F2F2C20}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://andriusurbelis.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ThinkAnimalWebApp\\ThinkAnimal.WebApp.csproj
+		SccProjectTopLevelParentUniqueName1 = ThinkAnimal_Dev.sln
+		SccProjectName1 = ThinkAnimalWebApp
+		SccLocalPath1 = ThinkAnimalWebApp
+		SccProjectUniqueName2 = ThinkAnimal.Interface\\ThinkAnimal.Interface.csproj
+		SccProjectTopLevelParentUniqueName2 = ThinkAnimal_Dev.sln
+		SccProjectName2 = ThinkAnimal.Interface
+		SccLocalPath2 = ThinkAnimal.Interface
+		SccProjectUniqueName3 = ThinkAnimal.Models\\ThinkAnimal.Models.csproj
+		SccProjectTopLevelParentUniqueName3 = ThinkAnimal_Dev.sln
+		SccProjectName3 = ThinkAnimal.Models
+		SccLocalPath3 = ThinkAnimal.Models
+		SccProjectUniqueName4 = ThinkAnimalApi\\ThinkAnimal.ThinkAnimalApi.csproj
+		SccProjectTopLevelParentUniqueName4 = ThinkAnimal_Dev.sln
+		SccProjectName4 = ThinkAnimalApi
+		SccLocalPath4 = ThinkAnimalApi
+		SccProjectUniqueName5 = ThinkAnimal.NodeDAL\\ThinkAnimal.NodeDAL.csproj
+		SccProjectTopLevelParentUniqueName5 = ThinkAnimal_Dev.sln
+		SccProjectName5 = ThinkAnimal.NodeDAL
+		SccLocalPath5 = ThinkAnimal.NodeDAL
+		SccProjectUniqueName6 = Shared\\Shared.csproj
+		SccProjectTopLevelParentUniqueName6 = ThinkAnimal_Dev.sln
+		SccProjectName6 = Shared
+		SccLocalPath6 = Shared
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF5DC23F-8A03-4AD7-87C8-766F0DAF23A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF5DC23F-8A03-4AD7-87C8-766F0DAF23A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF5DC23F-8A03-4AD7-87C8-766F0DAF23A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF5DC23F-8A03-4AD7-87C8-766F0DAF23A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3D9F26-BF1B-4951-B475-1518BB1DE9AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3D9F26-BF1B-4951-B475-1518BB1DE9AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3D9F26-BF1B-4951-B475-1518BB1DE9AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3D9F26-BF1B-4951-B475-1518BB1DE9AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C05C9A0-2C16-4514-B12F-C3E443B14463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C05C9A0-2C16-4514-B12F-C3E443B14463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C05C9A0-2C16-4514-B12F-C3E443B14463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C05C9A0-2C16-4514-B12F-C3E443B14463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF0616A3-0983-4071-9303-233E30E8A27C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF0616A3-0983-4071-9303-233E30E8A27C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF0616A3-0983-4071-9303-233E30E8A27C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF0616A3-0983-4071-9303-233E30E8A27C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9196498-0943-4AA2-BECD-350AF217CF5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9196498-0943-4AA2-BECD-350AF217CF5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9196498-0943-4AA2-BECD-350AF217CF5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9196498-0943-4AA2-BECD-350AF217CF5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B14E3D83-FE5F-4BB2-A13F-8B037F2F2C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B14E3D83-FE5F-4BB2-A13F-8B037F2F2C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B14E3D83-FE5F-4BB2-A13F-8B037F2F2C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B14E3D83-FE5F-4BB2-A13F-8B037F2F2C20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F53FA8B-8C44-468E-B103-978B75A3271A} = {50AB3CAF-F5A9-4CF7-87B1-8DB90B8E6AE9}
+		{CF5DC23F-8A03-4AD7-87C8-766F0DAF23A7} = {3F53FA8B-8C44-468E-B103-978B75A3271A}
+		{AD3D9F26-BF1B-4951-B475-1518BB1DE9AF} = {4F102150-B1C3-4E74-A036-8D7FEB1AF2F3}
+		{7C05C9A0-2C16-4514-B12F-C3E443B14463} = {4F102150-B1C3-4E74-A036-8D7FEB1AF2F3}
+		{CF0616A3-0983-4071-9303-233E30E8A27C} = {4F102150-B1C3-4E74-A036-8D7FEB1AF2F3}
+		{C9196498-0943-4AA2-BECD-350AF217CF5D} = {4F102150-B1C3-4E74-A036-8D7FEB1AF2F3}
+		{B14E3D83-FE5F-4BB2-A13F-8B037F2F2C20} = {4F102150-B1C3-4E74-A036-8D7FEB1AF2F3}
+	EndGlobalSection
+EndGlobal

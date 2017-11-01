@@ -1,0 +1,96 @@
+﻿<div ng-controller="homeController">
+
+    <br />
+
+    <div class="row" ng-hide="showStartButton">
+        <div class="col-lg-12 text-center">
+            <label>Think about any animal and </label>
+            <button id="StartButton" class="btn btn-info" ng-click="StartThinkAnimal()">Start Game</button>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row" ng-show="showStartButton">
+        <div class="col-lg-12 text-center">
+
+            <span data-ng-show="loadNode">
+                Getting question 
+                <i class="fa fa-spinner fa-spin"></i>
+            </span>
+
+            <label>{{node.Feature}}</label>
+
+            <br />
+            <br />
+
+            <p>
+                <span class="input-group-btn">
+                    <button id="YesButton" type="button" class="btn btn-info" ng-disabled="isButtonDisabled == true" ng-click="YesButton_Click()">Yes</button>
+                    <button id="NoButton" type="button" class="btn btn-danger" ng-disabled="isButtonDisabled == true" ng-click="NoButton_Click()">No</button>
+                </span>
+            </p>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap Guess Modal Dialog -->
+    <div id="GuessModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <label>My guess: Is it {{node.Animal}} ?</label>
+                </div>
+
+                <div class="modal-footer">
+                    <button id="ConfirmButton" class="btn btn-primary" ng-click="ConfirmButton_Click()">Yes</button>
+                    <button id="CancelButton" class="btn btn-danger" ng-click="CancelButton_Click()">No</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- /Bootstrap Guess Modal Dialog  -->
+
+    <!-- Bootstrap NewNode Modal Dialog -->
+    <div id="NewNodeModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="form1" name="form1">
+                    <div class="modal-header">
+                        <h4>I have given up. Please enter the following details</h4>
+                    </div>
+
+                    <div class="modal-body" style="height:100px;">
+
+                        <div class="form-group">
+                            <label for="AnimalInput" class="col-lg-5 control-label">What animal you had in mind?</label>
+                            <div class="col-lg-7">
+                                <input id="AnimalInput" type="text" class="form-control" placeholder="Animal" ng-maxlength=20 ng-required="true" ng-model="newNode.Animal">
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="form-group">
+                            <label for="FeatureInput" class="col-lg-5 control-label">What is its characteristic feature?</label>
+                            <div class="col-lg-7">
+                                <input id="FeatureInput" type="text" class="form-control" placeholder="Feature" ng-maxlength=20 ng-required="true" ng-model="newNode.Feature">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button id="CreateNodeButton" type="submit" class="btn btn-primary" ng-click="form1.$valid && CreateNodeButton_Click()">Create</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+
+    </div>
+    <!-- /Bootstrap NewNode Modal Dialog -->
+
+</div>

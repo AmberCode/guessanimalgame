@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="thinkAnimalApp">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Think Animal</title>
+
+    <link rel="stylesheet" href="components/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="components/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="components/font-awesome-4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/Main.css" />
+
+</head>
+<body>
+
+<div class="container">
+
+    <div ng-include="'/views/_header.html'"></div>
+
+    <div ng-view></div>
+
+    <div ng-include="'/views/_footer.html'"></div>
+
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script src="components/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="Components/Angular/Scripts/angular.min.js"></script>
+    <script src="Components/Angular/Scripts/angular-route.min.js"></script>
+    <script src="components/angular-ui/ui-bootstrap.min.js"></script>
+    
+    <script src="js/main.js"></script>
+    <script src="js/Models/HomeModels.js"></script>
+    <script src="js/Services/HomeService.js"></script>
+    <script src="js/Controllers/HomeController.js"></script>
+
+</body>
+</html>
